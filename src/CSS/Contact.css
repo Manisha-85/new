@@ -1,0 +1,162 @@
+.contact-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+   margin-bottom: 60px; 
+
+  /* Header aur contact ke beech gap */
+  padding: 100px 20px;
+
+  background: linear-gradient(
+      rgba(0, 0, 0, 0.6), 
+      rgba(0, 0, 0, 0.6)
+    ),
+    url("../assets/fitness img.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.contact-box {
+  background: rgba(255, 255, 255, 0.92); /* thoda transparent white */
+  padding: 40px;
+  width: 85%;
+  max-width: 1100px;
+  border-radius: 12px;
+  box-shadow: 0px 6px 25px rgba(0, 0, 0, 0.4);
+}
+
+.contact-title {
+  text-align: center;
+  font-size: 30px;
+  letter-spacing: 2px;
+  margin-bottom: 30px;
+  font-weight: bold;
+  color: #111;
+}
+
+.contact-content {
+  display: flex;
+  justify-content: space-between;
+  gap: 50px;
+  flex-wrap: wrap;
+}
+
+.contact-form,
+.contact-details {
+  flex: 1;
+  min-width: 200px;
+}
+
+.contact-form h3,
+.contact-details h3 {
+  margin-bottom: 15px;
+  font-size: 18px;
+  font-weight: bold;
+  color: #9d87ec; /* purple accent */
+}
+
+.contact-form form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.contact-form input,
+.contact-form select,
+.contact-form textarea {
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  outline: none;
+  font-size: 14px;
+  transition: border 0.3s, box-shadow 0.3s;
+}
+
+.contact-form input:focus,
+.contact-form select:focus,
+.contact-form textarea:focus {
+  border: 1px solid #9d87ec;
+  box-shadow: 0 0 6px rgba(157, 135, 236, 0.5);
+}
+
+.contact-form button {
+  padding: 12px;
+  background: #9d87ec;
+  color: white;
+  font-weight: bold;
+  border: none;
+  cursor: pointer;
+  border-radius: 6px;
+  transition: background 0.3s;
+}
+
+.contact-form button:hover {
+  background: #7a5ee8;
+}
+
+.contact-details p,
+.contact-details .office {
+  margin-bottom: 15px;
+  font-size: 14px;
+  color: #333;
+  line-height: 1.5;
+}
+
+.contact-details a {
+  color: #28a745;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.contact-details a:hover {
+  text-decoration: underline;
+}
+
+.office strong {
+  font-size: 16px;
+  display: block;
+  margin-bottom: 5px;
+  color: #111;
+}
+
+/* Social Links */
+.social-links {
+  margin-top: 15px;
+}
+
+.social-links a {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 15px;
+  color: #25d366; 
+  font-weight: bold;
+}
+
+.social-links a:hover {
+  text-decoration: underline;
+}
+
+/* 📱 Mobile Responsive */
+@media (max-width: 768px) {
+  .contact-content {
+    flex-direction: column;
+    gap: 25px;
+  }
+
+  .contact-title {
+    font-size: 22px;
+  }
+
+  .contact-form h3,
+  .contact-details h3 {
+    text-align: center;
+    font-size: 16px;
+  }
+
+  .social-links {
+    text-align: center;
+  }
+}
